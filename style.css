@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 40px 20px 20px 20px;
+}
+nav.navigation {
+    background: #34495e;
+    display: flex;
+    justify-content: space-around;
+}
+nav.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 60px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.activeNav{
+    background: tomato;
+}
+nav.navigation a:hover {
+    background: tomato;
+}
+nav.navigation a:active{
+    background: tomato;
+}
+.topBar {
+    background: tomato;
+    padding: 10px 0;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tableStyle {
+    border-color: #34495e;
+}
+.header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+input:focus, #inputBrand:focus {
+    border-color:#fff !important;
+    box-shadow: 0px 0px 3px 1px rgb(255 99 71 / 80%) !important;
+}
+form.addForm {
+    padding: 20px;
+    background: #ff634726;
+    margin: 0 13rem;
+    border-radius: 10px;
+}
+.updateForm {
+    padding: 20px;
+    background: #ff634726;
+    margin: 0 13rem;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    background: #34495e;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+input[type="submit"]:hover {
+    background: #34495ee8;
+}
+a.edit {
+    background: #FFC107;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a.delete {
+    background: #DC3545;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}

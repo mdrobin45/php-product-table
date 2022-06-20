@@ -63,6 +63,12 @@ form.addForm {
     margin: 0 13rem;
     border-radius: 10px;
 }
+.deleteForm {
+    padding: 20px;
+    background: #ff634726;
+    margin: 0 13rem;
+    border-radius: 10px;
+}
 input[type="submit"] {
     background: #34495e;
     border: none;
@@ -86,4 +92,7 @@ a.delete {
     padding: 4px 15px;
     border-radius: 5px;
     text-decoration: none;
+}
+input#deleteBTN {
+    background: red !important;
 }

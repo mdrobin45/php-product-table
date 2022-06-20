@@ -80,7 +80,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="inputBrand" class="form-label">Select Brand</label>
+                                <label for="inputBrand" class="form-label">Brand</label>
                                 <select name="brand" id="inputBrand" class="form-select">
 
 

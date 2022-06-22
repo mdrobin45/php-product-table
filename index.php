@@ -54,7 +54,7 @@
                                     <td>$ <?php echo $row['price']?></td>
                                     <td>
                                         <a class="edit" href="update.php?id=<?php echo $row['pid'];?>">Edit</a>
-                                        <a class="delete" href="#">Delete</a>
+                                        <a class="delete" href="delete.php?id=<?php echo $row['pid'];?>">Delete</a>
                                     </td>
                                 </tr>
                             <?php }?>

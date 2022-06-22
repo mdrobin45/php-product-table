@@ -31,6 +31,13 @@
             $sql = "SELECT * FROM products WHERE pid = $productId";
             $retval = mysqli_query($conn, $sql) or die('Database query error!');
             }
+            // Retrieve product if load form URL
+            if(isset($_GET['id'])){
+                $productId = $_GET['id'];
+            $conn = mysqli_connect('localhost', 'root', '', 'onlineshop') or die("Connection Error!");
+            $sql = "SELECT * FROM products WHERE pid = $productId";
+            $retval = mysqli_query($conn, $sql) or die('Database query error!');
+            }
 
 
             if(!isset($retval)){?>
@@ -51,10 +58,10 @@
                 <!-- Show product details start -->
                 <?php 
                 while( $product= mysqli_fetch_assoc($retval)){?>
-                    <form action="insertUpdate.php" method="post">
+                    <form action="deleteAction.php" method="post">
 
                         <div class="mb-3">
-                            <input hidden value="2" type="number" name="p_id" class="form-control" id="product_id">
+                            <input hidden value="<?php echo $product['pid'];?>" type="number" name="p_id" class="form-control" id="product_id">
                         </div>
 
                         <div class="mb-3">
